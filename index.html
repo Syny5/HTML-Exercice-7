@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="utf-8" />
+ 	<link rel="stylesheet" href="style.css">
+ </head>
+<body>
+	<!-- ol = liste ordonnée -->
+	<!-- form = formulaire -->
+	<form method="post" action="traitement.php">
+		<!-- remplacer les form par des fildset et les caption par des legend -->
+			<fieldset id="blue">
+		<legend id="blue">Votre identité</legend>
+		  <ol>
+			<li><label for="Nom">Nom</label> : <input type="text" name="Nom" placeholder="Nom" autofocus required></li>
+			<li><label for="Prénom">Prénom</label> : <input type="text" name="Prénom" placeholder="Prénom" autofocus required></li>
+			<li><label for="Adresse mail">Adresse mail</label> : <input type="email" name="Adresse mail" placeholder="Adresse mail" autofocus required></li>
+		  </ol>
+		  	</fieldset>
+
+			<fieldset id="violet">
+		<legend id="violet">Adresse de livraison</legend>
+		  <ol>
+			<li><label for="Adresse">Adresse</label> : <textarea name="Adresse" rows="6" required></textarea></li>
+			<li><label for="Code postal">Code postal</label> : <input type="text" name="Code postal" placeholder="Code postal" required></li>
+			<li><label for="Ville">Ville</label> : <input type="text" name="Ville" placeholder="Ville" required></li>
+		  </ol>
+			</fieldset>
+
+			<fieldset id="rose">
+		<legend id="rose">Informations de réglement</legend>
+		  <ol>
+		  	<li><label for="type">Type de carte bancaire :</label>
+		  		<br>
+		  		<input type="radio" name="type" value="VISA" id="VISA"><label for="VISA">VISA</label>
+		  		<br>
+		  		<input type="radio" name="type" value="Mastercard" id="Mastercard"><label for="Mastercard">Mastercard</label></li>
+			<li><label for="Numéro de carte">Numéro de carte</label> : <input type="text" name="Numéro de carte" placeholder="Numéro de carte"></li>
+			<li><label for="Code de sécurité">Code de sécurité</label> : <input type="text" name="Code de sécurité" placeholder="Code de sécurité"></li>
+			<li><label for="Nom du titulaire">Nom du titulaire</label> : <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire"></li>
+		  </ol>
+		  	</fieldset>
+		  		<input type="submit" value="J'achète !">
+		  			<!-- Suite en PHP -->
+	</form>
+</body>
+</html>
